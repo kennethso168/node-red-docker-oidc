@@ -6,10 +6,5 @@
     ":semanticCommits",
     "helpers:pinGitHubActionDigests"
   ],
-  "packageRules": [
-    {
-      "description": "Automerge update PRs raised by renovate",
-      "automerge": true
-    }
-  ]
+  "automerge": true
 }
