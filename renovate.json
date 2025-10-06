@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":separatePatchReleases",
+    ":semanticCommits",
+    "helpers:pinGitHubActionDigests"
+  ],
+  "packageRules": [
+    {
+      "description": "Automerge update PRs raised by renovate",
+      "automerge": true
+    }
+  ]
+}
