@@ -1,2 +1,2 @@
-FROM nodered/node-red:4.1.3
+FROM nodered/node-red:4.1.4
 RUN npm install passport-openidconnect
