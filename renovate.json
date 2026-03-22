@@ -4,7 +4,10 @@
     "config:recommended",
     ":separatePatchReleases",
     ":semanticCommits",
+    "docker:pinDigests",
     "helpers:pinGitHubActionDigests"
   ],
+  "minimumReleaseAge": "3 days",
+  "minimumReleaseAgeBehaviour": "timestamp-optional",
   "automerge": true
 }
