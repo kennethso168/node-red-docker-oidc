@@ -24,7 +24,7 @@ jobs:
       
       - name: Get version tag from Dockerfile
         id: tag_version
-        run: echo "VERSION_TAG=$(cat Dockerfile | head -n 1 | cut -d':' -f2)" >> "$GITHUB_OUTPUT"
+        run: echo "VERSION_TAG=$(cat Dockerfile | head -n 1 | cut -d':' -f2 | cut -d'@' -f1)" >> "$GITHUB_OUTPUT"
 
       - name: Docker meta
         id: meta
